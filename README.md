@@ -177,6 +177,18 @@ We strongly recommend:
 - Use different credentials for development and production environments
 - Enable human confirmation of tools when using the MCP server to avoid unintended operations
 
+## Capabilities
+
+This MCP server exposes two layers of functionality:
+
+### Tools (Primitives)
+Low-level, atomic operations that map closely to Newline APIs.
+These are powerful but require careful usage.
+
+### Skills (Workflows)
+Opinionated, high-level workflows that compose multiple tools,
+add validation and guardrails, and are safer for autonomous agents.
+
 ## Tools
 
 The server exposes 35+ [MCP tools](https://modelcontextprotocol.io/docs/concepts/tools) for interacting with the Newline Banking API. We recommend enabling human confirmation of tools and exercising caution when using the Newline MCP with other servers to avoid prompt injection attacks.
@@ -218,6 +230,10 @@ The server exposes 35+ [MCP tools](https://modelcontextprotocol.io/docs/concepts
 | | `get-combined-transfer` | Get details of a specific combined transfer |
 | **Customer Activities** | `list-customer-activities` | List all customer activities |
 | | `get-customer-activity` | Get details of a specific customer activity |
+
+## Skills 
+
+[need to complete this section]
 
 ## Docker Usage
 
