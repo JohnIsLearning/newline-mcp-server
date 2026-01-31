@@ -231,9 +231,53 @@ The server exposes 35+ [MCP tools](https://modelcontextprotocol.io/docs/concepts
 | **Customer Activities** | `list-customer-activities` | List all customer activities |
 | | `get-customer-activity` | Get details of a specific customer activity |
 
-## Skills 
+## Skills
 
-[need to complete this section]
+Agent skill guides provide step-by-step instructions for agents to accomplish common payment and banking workflows using Newline's APIs. Each guide includes exact field documentation, error handling, and practical examples.
+
+### Core Skills
+
+1. **[Managing Users and Accounts Skill](docs/skills/managing-users-and-accounts-skill.md)** — Create and manage customers and synthetic accounts. **Complete this skill first** as it is a prerequisite for all payment operations.
+   - Create customers
+   - Create and list synthetic accounts
+   - Configure account types and routing information
+
+2. **[Making Payments Skill](docs/skills/making-payments-skill.md)** — Initiate Wire, ACH, and Instant Payment (RTP) transfers with step-by-step guidance for each payment type.
+   - Wire transfer operations with intermediary bank support
+   - ACH transfer operations with prenote workflows
+   - Instant Payment (RTP) operations for real-time settlement
+   - Payment type-specific error handling
+
+3. **[Transaction Reporting Skill](docs/skills/transaction-reporting-skill.md)** — Query transaction history, monitor transfer status, check account balances, and track transaction events.
+   - List and query transactions
+   - Monitor transfer status and settlement
+   - Check account balances via pools
+   - Track transaction events and audit trails
+   - Generate activity reports
+
+4. **[Payment Operations Skill](docs/skills/payment-operations-skill.md)** — Handle advanced payment operations including ACH reversals, Wire and ACH returns, combined transfers, and payment-type-specific error recovery.
+   - ACH reversals for Newline-originated payments (5-day window)
+   - Wire and ACH returns for received payments (time-bound windows by SEC code)
+   - Combined transfer batch tracking
+   - SEC code return windows reference table
+   - Sandbox testing patterns for error scenarios
+   - Comprehensive error handling by payment type
+
+### Skill Prerequisites
+
+The skills follow a recommended progression:
+
+```
+Managing Users and Accounts Skill
+    ↓
+Making Payments Skill
+    ↓
+Transaction Reporting Skill
+    ↓
+Payment Operations Skill (advanced workflows)
+```
+
+All payment operations require customers and accounts to be configured first. Start with the [Managing Users and Accounts Skill](docs/skills/managing-users-and-accounts-skill.md).
 
 ## Docker Usage
 
