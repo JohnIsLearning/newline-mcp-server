@@ -1,9 +1,9 @@
 
 # Newline Model Context Protocol (MCP) Server
 
-Let your AI agents interact with the Newline Banking API by using our MCP server.
+Let your AI agents interact with the Newline APIs by using our MCP server.
 
-The Newline Model Context Protocol (MCP) server provides a comprehensive set of tools that AI agents can use to interact with the Newline Banking API for managing synthetic accounts, transfers, customers, transactions, and other banking operations. Includes detailed **Agent Skills** guides for managing users, making payments, reporting transactions, and advanced payment operations.
+The Newline Model Context Protocol (MCP) server provides a comprehensive set of tools that AI agents can use to interact with the Newline APIs for managing  accounts, payments, customers, transactions, and other payment operations. Includes detailed **Agent Skills** guides for managing users, making payments, reporting transactions, and payment operations like returns and reversals.
 
 ## Connect to Newline's MCP Server
 
